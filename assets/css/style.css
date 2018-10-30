@@ -57,7 +57,7 @@ h3 {
   z-index: 99;
   width: 100%;
   margin: 0 0 30px;
-  overflow: auto;
+  overflow: visible;
   color: #ffffff;
   background: #ffffff;
   border-bottom: 2px solid #cccccc;
@@ -65,7 +65,7 @@ h3 {
 
 #logo {
   float: left;
-  width: 250px;
+  width: fit-content;
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
@@ -214,4 +214,9 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+.dropdown-menu>li>a {
+  white-space: normal !important;
+  overflow: visible
 }
